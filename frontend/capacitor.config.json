@@ -1,0 +1,6 @@
+{
+  "appId": "com.skillx.app",
+  "appName": "SkillX",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

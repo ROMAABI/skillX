@@ -1,0 +1,265 @@
+/* 🌤 PAGE (LIGHT PREMIUM) */
+.open-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #0f172a;
+}
+
+/* 🧱 MAIN LAYOUT */
+.open-page .open-layout {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* 🧊 CARD BASE */
+.open-page .card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.open-page .card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.open-page .card h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.open-page .card ul {
+  padding-left: 18px;
+}
+
+.open-page .card ul li {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+/* LEFT PANEL */
+.open-page .left-panel {
+  width: 30%;
+}
+
+/* MIDDLE */
+.open-page .middle-panel {
+  width: 35%;
+}
+
+/* RIGHT */
+.open-page .right-panel {
+  width: 30%;
+}
+
+/* INPUT */
+.open-page .input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.open-page .input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* BUTTON */
+.open-page .btn {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.open-page .btn:hover {
+  opacity: 0.9;
+}
+
+/* REQUEST CARD */
+.open-page .request-card {
+  margin-top: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  transition: box-shadow 0.2s ease;
+}
+
+.open-page .request-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.open-page .request-card p {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 6px;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.open-page .request-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* STATUS */
+.open-page .status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.open-page .status.open {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.open-page .status.accepted {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.open-page .status.closed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* SMALL BUTTON */
+.open-page .small-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.open-page .accept-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.open-page .accept-btn:hover {
+  background: #16a34a;
+}
+
+.open-page .close-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.open-page .close-btn:hover {
+  background: #dc2626;
+}
+
+/* MY REQUEST CARD */
+.open-page .my-request-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.open-page .my-request-card p {
+  margin-bottom: 4px;
+}
+
+.open-page .my-request-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.open-page .icon-btn {
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.open-page .icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.open-page .close-icon:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+}
+
+.open-page .delete-icon:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .open-page {
+    padding: 10px;
+  }
+  
+  .open-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .open-page .card {
+    padding: 15px;
+  }
+  
+  .open-page h2 {
+    font-size: 18px;
+  }
+  
+  .open-page .input {
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .open-page .btn {
+    padding: 8px;
+    font-size: 13px;
+  }
+  
+  .open-page .request-card {
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .open-page .request-card p {
+    font-size: 12px;
+  }
+}
